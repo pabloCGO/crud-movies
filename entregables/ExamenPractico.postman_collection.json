@@ -1,0 +1,356 @@
+{
+	"id": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+	"name": "ExamenPractico",
+	"description": "Contiene los servicios que se solicitan para el examen practico",
+	"order": [],
+	"folders": [
+		{
+			"name": "Autenticacion",
+			"description": "",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"order": [
+				"ba309c2f-3122-3513-2690-4d0ebc6dca5a",
+				"32ec24fe-ffe6-f414-d35d-fe9f4e28ceaf"
+			],
+			"owner": "564478",
+			"folders_order": [],
+			"id": "57cfd908-4d02-11f4-224d-438da3507f5e"
+		},
+		{
+			"name": "CRUD movie",
+			"description": "",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"order": [
+				"63081318-b2e2-ad02-1a8b-aa21c52bbb7c",
+				"28b2f8b0-030b-bdbb-0e3c-b292e03cf98a",
+				"ad03d571-8b17-9b38-0da3-73e4998d544e",
+				"4a357b2d-640f-15aa-0a63-29a1cda95f43",
+				"f786773f-1580-f603-996b-f816bb238096"
+			],
+			"owner": "564478",
+			"folders_order": [],
+			"id": "92b3273c-82cb-7ef5-9453-bef52854a6df"
+		},
+		{
+			"name": "Petición a imdb",
+			"description": "",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"order": [
+				"ebb4f41a-ce32-6341-5738-db47a1c6fa27"
+			],
+			"owner": "564478",
+			"folders_order": [],
+			"id": "471b5fa2-59ba-505f-41f1-a18079238cc9"
+		}
+	],
+	"folders_order": [
+		"57cfd908-4d02-11f4-224d-438da3507f5e",
+		"471b5fa2-59ba-505f-41f1-a18079238cc9",
+		"92b3273c-82cb-7ef5-9453-bef52854a6df"
+	],
+	"timestamp": 1593546796092,
+	"owner": "564478",
+	"public": false,
+	"requests": [
+		{
+			"id": "28b2f8b0-030b-bdbb-0e3c-b292e03cf98a",
+			"headers": "authorization: bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://peliculas-ex.herokuapp.com/movie-rating/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593575601907,
+			"name": "consultar por id",
+			"description": "",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"responses": []
+		},
+		{
+			"id": "32ec24fe-ffe6-f414-d35d-fe9f4e28ceaf",
+			"headers": "Authorization: Basic dXNlcjpwYXNzd29yZA==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic dXNlcjpwYXNzd29yZA==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://peliculas-ex.herokuapp.com/oauth/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "password",
+					"value": "secret",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593575870608,
+			"name": "obtener  token para ADMIN",
+			"description": "",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"responses": []
+		},
+		{
+			"id": "4a357b2d-640f-15aa-0a63-29a1cda95f43",
+			"headers": "authorization: bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://peliculas-ex.herokuapp.com/movie-rating",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593575795277,
+			"name": "actualizar registro rating",
+			"description": "",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"responses": [],
+			"rawModeData": "{\"id\":1, \"imdbID\":\"tt0096895\",\"rating\":\"8.6\",\"comment\":\"pelicula regular\",\"displayDate\":\"2020-06-30\"}"
+		},
+		{
+			"id": "63081318-b2e2-ad02-1a8b-aa21c52bbb7c",
+			"headers": "authorization: bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://peliculas-ex.herokuapp.com/movie-rating/",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"data": null,
+			"dataMode": "params",
+			"name": "consultar todos los ratings",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593575565708,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "92b3273c-82cb-7ef5-9453-bef52854a6df"
+		},
+		{
+			"id": "ad03d571-8b17-9b38-0da3-73e4998d544e",
+			"headers": "authorization: bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://peliculas-ex.herokuapp.com/movie-rating",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"data": [],
+			"dataMode": "raw",
+			"name": "guardar registro rating",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1593575717409,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "92b3273c-82cb-7ef5-9453-bef52854a6df",
+			"rawModeData": "{\"imdbID\":\"tt0096895\",\"rating\":\"5.6\",\"comment\":\"pelicula fea\",\"displayDate\":\"2020-06-30\"}"
+		},
+		{
+			"id": "ba309c2f-3122-3513-2690-4d0ebc6dca5a",
+			"headers": "Authorization: Basic dXNlcjpwYXNzd29yZA==\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic dXNlcjpwYXNzd29yZA==",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://peliculas-ex.herokuapp.com/oauth/token",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "password",
+					"value": "secret",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "user",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593575649880,
+			"name": "obtener token para USER",
+			"description": "",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"responses": []
+		},
+		{
+			"id": "ebb4f41a-ce32-6341-5738-db47a1c6fa27",
+			"headers": "authorization: bearer 23415c77-9bc8-4769-82e8-75f34e5376ac\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "bearer 23415c77-9bc8-4769-82e8-75f34e5376ac",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://peliculas-ex.herokuapp.com/movie?title=batman",
+			"queryParams": [
+				{
+					"key": "title",
+					"value": "batman",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593575516994,
+			"name": "buscar pelicula por titulo",
+			"description": "",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"responses": []
+		},
+		{
+			"id": "f786773f-1580-f603-996b-f816bb238096",
+			"headers": "authorization: bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe\n",
+			"headerData": [
+				{
+					"key": "authorization",
+					"value": "bearer 9bdf8630-f47b-41b6-9e49-20b6c728f8fe",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://peliculas-ex.herokuapp.com/movie-rating/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1593575865410,
+			"name": "eliminar registro rating",
+			"description": "",
+			"collectionId": "be1a3cd1-52d0-4ff5-acde-4d25fae6b075",
+			"responses": []
+		}
+	]
+}
