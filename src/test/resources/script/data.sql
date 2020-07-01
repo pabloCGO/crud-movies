@@ -1,0 +1,1 @@
+insert into movie_rating(imdbid, rating, comment) values ('334d2d3', 6.7, 'Buena pelicula');
